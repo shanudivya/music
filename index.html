@@ -46,6 +46,12 @@
 			<div class="song" id="song4">
 			<span class="song-name"> </span>
 			</div>
+			<div class="song" id="song5">
+			<span class="song-name"> </span>
+			</div>
+			<div class="song" id="song6">
+			<span class="song-name"> </span>
+			</div>
         
             </section>
             <footer>
@@ -120,8 +126,8 @@
 		
 		
 		
-		    var songList = ['Shape Of You','Daspacito', 'Nashe Si Chadh Gayi', 'The Breakup Song']; 
-			var fileNames = ['song5.mp3','song2.mp3','song3.mp3','song4.mp3'];
+		    var songList = ['Shape Of You','Daspacito', 'Nashe Si Chadh Gayi', 'The Breakup Song', 'Mahi Ve', 'Khaab']; 
+			var fileNames = ['song5.mp3','song2.mp3','song3.mp3','song4.mp3','song6.mp3','song7.mp3'];
 	
 
 			window.onload = function() {
@@ -129,6 +135,8 @@
 			$('#song2 .song-name').text(songList[1]);
 			$('#song3 .song-name').text(songList[2]);
 			$('#song4 .song-name').text(songList[3]);
+			$('#song5 .song-name').text(songList[4]);
+			$('#song6 .song-name').text(songList[5]);
 			
 		
 			
@@ -183,6 +191,32 @@
 			}
 			else {
 			audio.src = fileNames[3];
+			toggleSong();
+			}
+			});
+			
+			$('#song5').click(function() {
+			var audio = document.querySelector('audio');
+			var currentSong = audio.src;
+			if(currentSong.search(fileNames[4]) != -1)
+			{
+			toggleSong();
+			}
+			else {
+			audio.src = fileNames[4];
+			toggleSong();
+			}
+			});
+			
+			$('#song6').click(function() {
+			var audio = document.querySelector('audio');
+			var currentSong = audio.src;
+			if(currentSong.search(fileNames[5]) != -1)
+			{
+			toggleSong();
+			}
+			else {
+			audio.src = fileNames[5];
 			toggleSong();
 			}
 			});

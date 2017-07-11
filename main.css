@@ -75,7 +75,7 @@ h1 {
     float: right;
 }
 
-.clickable {
+.clickable  {
     cursor: pointer;
 }
 
@@ -90,11 +90,12 @@ h1 {
     align-items: center;
 }
 
-.progress-wrapper span {
+.progress-wrapper span  {
     color: #959595;
+
 }
 
-.player-progress {
+.player-progress  {
     height: 8px;
     width: 700px;
     background-color: #3d3d3d;
@@ -105,9 +106,12 @@ h1 {
 
 .progress-filled {
     background-color: #959595;
-    height: 8px;
+    
     border-radius: 4px;
-    width: 0;
+    
+	width: 1%;
+  height: 8px;
+  
 
 }
 
@@ -164,3 +168,58 @@ h1 {
 .song-length {
     text-align: right;
 }
+
+.content {
+    position: relative;
+}
+.current-song-wrapper {
+    position: absolute;
+    bottom: 15;
+    display: flex;
+}
+
+.current-song-image {
+    height: 65px;
+    width: 70px;
+    margin-right: 1rem;
+	  margin-top: 6px;
+
+	
+	
+
+}
+
+.current-song-name {
+    font-size: 1.4rem;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+.current-song-album
+{
+	margin-top:0.4rem;
+}
+
+    /*DataTables overrides*/
+table.dataTable tbody tr {
+    background-color: initial;
+}
+#songs_info {
+    display: none;
+}
+
+#songs_filter {
+    color: transparent;
+}
+#songs_filter input {
+    width: 300px;
+    margin-bottom: 1rem;
+    font-size: 16px;
+	border-radius:20px;
+	outline:none;
+	border:none;
+}
+
+        
+
+
+        

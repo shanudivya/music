@@ -1,5 +1,8 @@
 	
-			 
+			 var currentSongNumber = 1;
+			var willLoop = 0;
+			var willShuffle = 0; 
+		
 	
 					
 				function fancyTimeFormat(time)
@@ -64,24 +67,24 @@
 		
 		
 			
-		function addSongNameClickEvent(songObj,position) {
-			var songName = songObj.fileName;
-    var id = '#song' + position;
-$(id).click(function() {
-var audio = document.querySelector('audio');
-var currentSong = audio.src;
-if(currentSong.search(songName) != -1)
-{
-toggleSong();
-}
-else {
-audio.src = songName;
-toggleSong();
-changeCurrentSongDetails(songObj); 
-}
-});
-}
-				
+						function addSongNameClickEvent(songObj,position) {
+							var songName = songObj.fileName;
+					var id = '#song' + position;
+				$(id).click(function() {
+				var audio = document.querySelector('audio');
+				var currentSong = audio.src;
+				if(currentSong.search(songName) != -1)
+				{
+				toggleSong();
+				}
+				else {
+				audio.src = songName;
+				toggleSong();
+				changeCurrentSongDetails(songObj); 
+				}
+				});
+				}
+								
 				
 			
 				  var songs = [{
@@ -145,7 +148,38 @@ changeCurrentSongDetails(songObj);
 					
 			}]
 		  
-			
+		  
+		  
+		  $('audio').on('ended',function() {
+				var nextSongNumber = randomExcluded(1,4,currentSongNumber);
+					if (willShuffle == 1) {
+						var nextSongNumber = randomExcluded(1,4,currentSongNumber); // Calling our function from Stackoverflow
+						var nextSongObj = songs[nextSongNumber-1];
+						audio.src = nextSongObj.fileName;
+						toggleSong();
+						changeCurrentSongDetails(nextSongObj);
+						currentSongNumber = nextSongNumber;
+					}
+					else if(currentSongNumber < 4) {
+						var nextSongObj = songs[currentSongNumber];
+						audio.src = nextSongObj.fileName;
+						toggleSong();
+						changeCurrentSongDetails(nextSongObj);
+						currentSongNumber = currentSongNumber + 1;
+					}
+					else if(willLoop == 1) {
+						var nextSongObj = songs[0];
+						audio.src = nextSongObj.fileName;
+						toggleSong();
+						changeCurrentSongDetails(nextSongObj);
+						currentSongNumber =  1;
+					}
+					else {
+						$('.play-icon').removeClass('fa-pause').addClass('fa-play');
+						audio.currentTime = 0;
+					}
+				})
+							
   	        window.onload = function() {
 			
 			changeCurrentSongDetails(songs[0]);
@@ -192,7 +226,9 @@ changeCurrentSongDetails(songObj);
 		
 				
 				$('#songs').DataTable({
-				paging: false
+				 "scrollY": "200px",
+					"scrollCollapse": true,
+					"paging": false
 			});
 			}	   
 					   
@@ -217,14 +253,27 @@ changeCurrentSongDetails(songObj);
 				});
 	
 	
-				$('body').on('keypress', function(event) {
-							if (event.keyCode == 32) {
-							  toggleSong(); 
-							}
-						});
-						
-					
-						
-					
-					
 			
+						
+				$('body').on('keypress',function(event) {
+					console.log(event);
+					var target = event.target;
+					if (event.keyCode == 32 && target.tagName !='INPUT')
+					{
+						toggleSong();
+					}
+				});
+						
+					
+					
+					
+				
+			$('.fa-random').on('click',function() {
+			$('.fa-random').toggleClass('disabled')
+			willShuffle = 1 - willShuffle;
+            });
+			
+			$('.fa-repeat').on('click',function() {
+				$('.fa-repeat').toggleClass('disabled')
+				willLoop = 1 - willLoop;
+			});

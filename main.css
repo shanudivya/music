@@ -179,10 +179,11 @@ h1 {
 }
 
 .current-song-image {
-    height: 65px;
-    width: 70px;
+    height: 100px;
+    width: 100px;
     margin-right: 1rem;
-	  margin-top: 6px;
+	  margin-top: 10px;
+	 
 
 	
 	
@@ -191,7 +192,7 @@ h1 {
 
 .current-song-name {
     font-size: 1.4rem;
-    margin-top: 4px;
+    margin-top: 25px;
     margin-bottom: 0;
 }
 .current-song-album
@@ -219,6 +220,16 @@ table.dataTable tbody tr {
 	border:none;
 }
 
+.player-buttons .fa {
+    margin-right: 2rem;
+}
+
+.fa.disabled {
+    color: gray;
+}
+.fa.disabled {
+    color: gray;
+}
         
 
 

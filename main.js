@@ -179,6 +179,8 @@
 						audio.currentTime = 0;
 					}
 				})
+				
+				
 							
   	        window.onload = function() {
 			
@@ -277,3 +279,9 @@
 				$('.fa-repeat').toggleClass('disabled')
 				willLoop = 1 - willLoop;
 			});
+			
+		
+	
+		
+		
+	

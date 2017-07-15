@@ -4,19 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <title> Song App</title>
+	
     <link rel="stylesheet" type="text/css" href="font-awesome.css">
 	 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
-	 <link rel="stylesheet" type="text/css" href="vegas.css">
+	
 </head>
 
 
 
 
-<body>
+<body  class="vegas-slider">
 
-    <div class="wrapper">
-        <section class="welcome-screen hidden ">
+    <div class="wrapper  ">
+        <section class="welcome-screen   ">
             <h1> Welcome to Songify </h1>
             <h3> Enter name to access your account </h3>
             <div class="input-wrapper">
@@ -24,13 +25,14 @@
                 <button> Go </button>
             </div>
         </section>
-        <div class="main">
+       
+        <div class="main hidden">
             <header>
                 <div class="right floated user-name"> </div>
             </header>
             <section class="content">
                 <audio src="song2.mp3"></audio>
-				<table id="songs">
+				<table id="songs" >
                 <thead class="list-headers">
 			<td> Title </td> 
 			<td> Artist </td>
@@ -119,14 +121,18 @@
                     <div class="progress-wrapper">
 					
                         <span class="time-elapsed"> </span>
-                        <div class="player-progress" >
 						
-                            <div class="progress-filled"> </div>
+						
+						
+						<div class="player-progress" >
+						
+                         <div class="progress-filled"> </div>
 
 							                     
 
                         </div>
                         <span class="song-duration"></span>
+						<input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
 					
                     </div>
                 </div>
@@ -135,9 +141,11 @@
     </div>
     <script src="jquery.js">
     </script>
-
+<script src="plugins/vegas.js"></script>
 	 <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js">
+	 
     </script>
+	
     <script src="main.js">
 	
 

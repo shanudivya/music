@@ -44,7 +44,15 @@
         { src: "images/22.jpg" },
         { src: "images/23.png" },
         { src: "images/24.jpg" },
-        { src: "images/25.jpg" }
+        { src: "images/25.jpg" },
+		 { src: "images/26.jpg" },
+        { src: "images/27.jpg" },
+		 { src: "images/28.jpg" },
+        { src: "images/29.jpg" },
+		 { src: "images/291.jpg" },
+        { src: "images/292.jpg" },
+		 { src: "images/293.jpg" }
+       
     ],
 	animation: 'kenburns'
 		
@@ -98,6 +106,11 @@ else if(next == songs[2]){
         { src: "images/46.jpg" },
 		 { src: "images/47.jpg" },
 		  { src: "images/48.jpg" },
+		   { src: "images/401.jpg" },
+		  { src: "images/402.jpg" },
+		   { src: "images/403.jpg" },
+		  
+		  
     ],
 	animation: 'kenburns'
 		
@@ -131,7 +144,15 @@ else if(next == songs[2]){
 	    { src: "images/596.jpg" },
 		{ src: "images/597.jpg" },
 		{ src: "images/598.jpg" },
-		{ src: "images/599.jpg" }
+		{ src: "images/599.jpg" },
+		 { src: "images/501.jpg" },
+		  { src: "images/502.jpg" },
+		   { src: "images/503.jpg" },
+		  { src: "images/504.jpg" },
+		   { src: "images/505.jpg" },
+		  { src: "images/506.jpg" },
+		   { src: "images/507.jpg" }
+		 
 		
     ],
 	animation: 'kenburns'

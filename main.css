@@ -177,7 +177,7 @@ h3{
 }
 
 .song-list .song:hover {
-    background-color: #282828;
+   background: rgba(30, 27, 30 ,0.5);
 }
 
 
@@ -255,6 +255,7 @@ input #slider{
 	  position:relative;
 	  top:8px;
 	  left:-30px;
+
   } 
 	
 	input[type=range] {

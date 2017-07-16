@@ -36,7 +36,12 @@
         { src: "images/11.jpg" },
         { src: "images/12.jpg" },
         { src: "images/13.png" },
+		{ src: "images/14.jpg" },
         { src: "images/15.jpg" },
+		{ src: "images/16.jpg" },
+		{ src: "images/17.jpg" },
+		{ src: "images/18.jpg" },
+		{ src: "images/19.png" },
 		{ src: "images/101.jpg" },
 		{ src: "images/102.jpg" },
 		{ src: "images/103.jpg" }
@@ -94,7 +99,10 @@ else if(next == songs[2]){
         { src: "images/33.png" },
         { src: "images/34.jpg" },
 		{ src: "images/35.png" },
-		{ src: "images/36.jpg" }
+		{ src: "images/36.jpg" },
+		  { src: "images/37.jpg" },
+		{ src: "images/38.jpg" },
+		{ src: "images/39.jpg" }
 		  
 		
     ],
@@ -123,7 +131,11 @@ else if(next == songs[2]){
 		{ src: "images/48.jpg" },
 		{ src: "images/401.jpg" },
 		{ src: "images/402.jpg" },
-		{ src: "images/403.jpg" }
+		{ src: "images/403.jpg" },
+		{ src: "images/404.jpg" },
+		{ src: "images/405.jpg" },
+		{ src: "images/406.png" },
+		{ src: "images/407.jpg" }
 		  
 		  
     ],

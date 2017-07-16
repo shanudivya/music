@@ -2,7 +2,22 @@
 				 var currentSongNumber = 1;
 			var willLoop = 0;
 			var willShuffle = 0; 
-	
+	var willmute = 1; 
+			
+			
+			
+			
+			function mute(){
+						var song=document.querySelector('audio');
+				if (song.muted)
+				{
+					song.muted= false;
+				}
+				else
+				{
+					song.muted=true;
+				}
+			}
 			
 		
 		
@@ -24,7 +39,7 @@
         { src: "images/15.jpg" },
 		{ src: "images/101.jpg" },
 		{ src: "images/102.jpg" },
-		 { src: "images/103.jpg" }
+		{ src: "images/103.jpg" }
     ],
 	animation: 'kenburns'
 		
@@ -45,13 +60,13 @@
         { src: "images/23.png" },
         { src: "images/24.jpg" },
         { src: "images/25.jpg" },
-		 { src: "images/26.jpg" },
+		{ src: "images/26.jpg" },
         { src: "images/27.jpg" },
-		 { src: "images/28.jpg" },
+		{ src: "images/28.jpg" },
         { src: "images/29.jpg" },
-		 { src: "images/291.jpg" },
+		{ src: "images/291.jpg" },
         { src: "images/292.jpg" },
-		 { src: "images/293.jpg" }
+		{ src: "images/293.jpg" }
        
     ],
 	animation: 'kenburns'
@@ -78,8 +93,8 @@ else if(next == songs[2]){
         { src: "images/32.jpg" },
         { src: "images/33.png" },
         { src: "images/34.jpg" },
-		 { src: "images/35.png" },
-		  { src: "images/36.jpg" }
+		{ src: "images/35.png" },
+		{ src: "images/36.jpg" }
 		  
 		
     ],
@@ -104,11 +119,11 @@ else if(next == songs[2]){
         { src: "images/43.jpg" },
         { src: "images/45.jpg" },
         { src: "images/46.jpg" },
-		 { src: "images/47.jpg" },
-		  { src: "images/48.jpg" },
-		   { src: "images/401.jpg" },
-		  { src: "images/402.jpg" },
-		   { src: "images/403.jpg" },
+		{ src: "images/47.jpg" },
+		{ src: "images/48.jpg" },
+		{ src: "images/401.jpg" },
+		{ src: "images/402.jpg" },
+		{ src: "images/403.jpg" }
 		  
 		  
     ],
@@ -145,13 +160,13 @@ else if(next == songs[2]){
 		{ src: "images/597.jpg" },
 		{ src: "images/598.jpg" },
 		{ src: "images/599.jpg" },
-		 { src: "images/501.jpg" },
-		  { src: "images/502.jpg" },
-		   { src: "images/503.jpg" },
-		  { src: "images/504.jpg" },
-		   { src: "images/505.jpg" },
-		  { src: "images/506.jpg" },
-		   { src: "images/507.jpg" }
+		{ src: "images/501.jpg" },
+		{ src: "images/502.jpg" },
+		{ src: "images/503.jpg" },
+		{ src: "images/504.jpg" },
+		{ src: "images/505.jpg" },
+		{ src: "images/506.jpg" },
+		{ src: "images/507.jpg" }
 		 
 		
     ],
@@ -178,11 +193,11 @@ else if(next == songs[2]){
         { src: "images/64.jpg" },
 		{ src: "images/65.jpg" },
 	    { src: "images/66.jpg" },
-		 { src: "images/67.jpg" },
-		  { src: "images/601.jpg" },
-		   { src: "images/602.jpg" },
-		    { src: "images/603.png" },
-		    { src: "images/604.jpg" }
+		{ src: "images/67.jpg" },
+		{ src: "images/601.jpg" },
+		{ src: "images/602.jpg" },
+		{ src: "images/603.png" },
+		{ src: "images/604.jpg" }
 		
 		 
 	    
@@ -542,7 +557,13 @@ function setvolume(){
 					}
 				});
 						
-					
+							
+			$('.fa-volume-up').on('click',function() {
+			$('.fa-volume-up').toggleClass('disabled')
+			willmute = 1 - willmute;
+			
+			mute();
+            });
 					
 					
 				

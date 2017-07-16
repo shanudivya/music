@@ -21,7 +21,10 @@
         { src: "images/11.jpg" },
         { src: "images/12.jpg" },
         { src: "images/13.png" },
-        { src: "images/15.jpg" }
+        { src: "images/15.jpg" },
+		{ src: "images/101.jpg" },
+		{ src: "images/102.jpg" },
+		 { src: "images/103.jpg" }
     ],
 	animation: 'kenburns'
 		
@@ -155,6 +158,12 @@ else if(next == songs[2]){
 		{ src: "images/65.jpg" },
 	    { src: "images/66.jpg" },
 		 { src: "images/67.jpg" },
+		  { src: "images/601.jpg" },
+		   { src: "images/602.jpg" },
+		    { src: "images/603.png" },
+		    { src: "images/604.jpg" }
+		
+		 
 	    
     ],
 	animation: 'kenburns'

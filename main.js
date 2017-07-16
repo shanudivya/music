@@ -229,7 +229,11 @@ else if(next == songs[2]){
 }
 
 
-
+function setvolume(){
+	var song = document.querySelector('audio');
+	song.volume = slider.value/100;
+	
+}
 
 	
 			function toggleSong() {
@@ -532,7 +536,9 @@ else if(next == songs[2]){
 			});
 			
 		
-	
+	$('#slider').on('mousemove',function(){
+		setvolume();
+	});
 
 
 $('#song1').on('click',function(){

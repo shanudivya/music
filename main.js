@@ -6,7 +6,8 @@
 			
 			
 			
-			
+	//mute function//
+	
 			function mute(){
 						var song=document.querySelector('audio');
 				if (song.muted)
@@ -23,7 +24,7 @@
 		
 	
 	
-		
+		//function for different sliders for different songs//
 	function slide(next){
 		
 		if(next==songs[0]){
@@ -85,171 +86,171 @@
 	
 
 
-else if(next == songs[2]){
-	
-	 $('body').vegas('destroy');
-		
-		
-		$('.vegas-slider').vegas({
-		
-   slides:[
-        { src: "images/30.jpg" },
-        { src: "images/31.jpg" },
-        { src: "images/32.jpg" },
-        { src: "images/33.png" },
-        { src: "images/34.jpg" },
-		{ src: "images/35.png" },
-		{ src: "images/36.jpg" },
-		  { src: "images/37.jpg" },
-		{ src: "images/38.jpg" },
-		{ src: "images/39.jpg" }
-		  
-		
-    ],
-	animation: 'kenburns'
-		
-		
-		
-		
-		
-	});
-	
-	}	
-	else if(next == songs[3]){
-		$('body').vegas('destroy');
-		
-		
-		$('.vegas-slider').vegas({
-		
-   slides:[
-        { src: "images/41.jpg" },
-        { src: "images/42.jpg" },
-        { src: "images/43.jpg" },
-        { src: "images/45.jpg" },
-        { src: "images/46.jpg" },
-		{ src: "images/47.jpg" },
-		{ src: "images/48.jpg" },
-		{ src: "images/401.jpg" },
-		{ src: "images/402.jpg" },
-		{ src: "images/403.jpg" },
-		{ src: "images/404.jpg" },
-		{ src: "images/405.jpg" },
-		{ src: "images/406.png" },
-		{ src: "images/407.jpg" }
-		  
-		  
-    ],
-	animation: 'kenburns'
+			else if(next == songs[2]){
+				
+				 $('body').vegas('destroy');
+					
+					
+					$('.vegas-slider').vegas({
+					
+			   slides:[
+					{ src: "images/30.jpg" },
+					{ src: "images/31.jpg" },
+					{ src: "images/32.jpg" },
+					{ src: "images/33.png" },
+					{ src: "images/34.jpg" },
+					{ src: "images/35.png" },
+					{ src: "images/36.jpg" },
+					  { src: "images/37.jpg" },
+					{ src: "images/38.jpg" },
+					{ src: "images/39.jpg" }
+					  
+					
+				],
+				animation: 'kenburns'
 		
 		
 		
 		
 		
-	});
-	
-	}
-	else if(next == songs[4]){
-	$('body').vegas('destroy');
-		
-		
-		$('.vegas-slider').vegas({
-		
-   slides:[
-        { src: "images/51.jpg" },
-        { src: "images/52.jpg" },
-        { src: "images/53.jpg" },
-        { src: "images/54.jpg" },
-        { src: "images/55.jpg" },
-		{ src: "images/56.jpg" },
-	    { src: "images/57.jpg" },
-	    { src: "images/58.jpg" },
-		{ src: "images/59.jpg" },
-	    { src: "images/591.jpg" },
-	    { src: "images/592.jpg" },
-		{ src: "images/593.jpg" },
-		{ src: "images/595.jpg" },
-	    { src: "images/596.jpg" },
-		{ src: "images/597.jpg" },
-		{ src: "images/598.jpg" },
-		{ src: "images/599.jpg" },
-		{ src: "images/501.jpg" },
-		{ src: "images/502.jpg" },
-		{ src: "images/503.jpg" },
-		{ src: "images/504.jpg" },
-		{ src: "images/505.jpg" },
-		{ src: "images/506.jpg" },
-		{ src: "images/507.jpg" }
-		 
-		
-    ],
-	animation: 'kenburns'
-		
-		
-		
-		
-		
-	});
-	}
-	 else if(next == songs[5])
-	 {
-	 $('body').vegas('destroy');
-		
-		
-		$('.vegas-slider').vegas({
-		
-   slides:[
-        { src: "images/60.jpg" },
-        { src: "images/61.jpg" },
-        { src: "images/62.jpg" },
-        { src: "images/63.jpg" },
-        { src: "images/64.jpg" },
-		{ src: "images/65.jpg" },
-	    { src: "images/66.jpg" },
-		{ src: "images/67.jpg" },
-		{ src: "images/601.jpg" },
-		{ src: "images/602.jpg" },
-		{ src: "images/603.png" },
-		{ src: "images/604.jpg" }
-		
-		 
-	    
-    ],
-	animation: 'kenburns'
-		
-		
-		
-		
-		
-	});
-	 }
-	else
-	{
-		$('body').vegas('destroy');
-		$('.vegas-slider').vegas({
-		
-   slides:[
-        { src: "images/01.jpg" },
-        { src: "images/02.jpg" },
-        { src: "images/04.jpg" },
-        { src: "images/05.jpg" },
-        { src: "images/06.jpg" }
-    ],
-	animation: 'kenburns'
-		
-		
-		
-		
-		
-	});
-	}
-	
-	}
-	
-	 
-	 
+				});
+				
+				}	
+				else if(next == songs[3]){
+					$('body').vegas('destroy');
+					
+					
+					$('.vegas-slider').vegas({
+					
+			   slides:[
+					{ src: "images/41.jpg" },
+					{ src: "images/42.jpg" },
+					{ src: "images/43.jpg" },
+					{ src: "images/45.jpg" },
+					{ src: "images/46.jpg" },
+					{ src: "images/47.jpg" },
+					{ src: "images/48.jpg" },
+					{ src: "images/401.jpg" },
+					{ src: "images/402.jpg" },
+					{ src: "images/403.jpg" },
+					{ src: "images/404.jpg" },
+					{ src: "images/405.jpg" },
+					{ src: "images/406.png" },
+					{ src: "images/407.jpg" }
+					  
+					  
+				],
+				animation: 'kenburns'
+					
+					
+					
+					
+					
+				});
+				
+				}
+				else if(next == songs[4]){
+				$('body').vegas('destroy');
+					
+					
+					$('.vegas-slider').vegas({
+					
+			   slides:[
+					{ src: "images/51.jpg" },
+					{ src: "images/52.jpg" },
+					{ src: "images/53.jpg" },
+					{ src: "images/54.jpg" },
+					{ src: "images/55.jpg" },
+					{ src: "images/56.jpg" },
+					{ src: "images/57.jpg" },
+					{ src: "images/58.jpg" },
+					{ src: "images/59.jpg" },
+					{ src: "images/591.jpg" },
+					{ src: "images/592.jpg" },
+					{ src: "images/593.jpg" },
+					{ src: "images/595.jpg" },
+					{ src: "images/596.jpg" },
+					{ src: "images/597.jpg" },
+					{ src: "images/598.jpg" },
+					{ src: "images/599.jpg" },
+					{ src: "images/501.jpg" },
+					{ src: "images/502.jpg" },
+					{ src: "images/503.jpg" },
+					{ src: "images/504.jpg" },
+					{ src: "images/505.jpg" },
+					{ src: "images/506.jpg" },
+					{ src: "images/507.jpg" }
+					 
+					
+				],
+				animation: 'kenburns'
+					
+					
+					
+					
+					
+				});
+				}
+				 else if(next == songs[5])
+				 {
+				 $('body').vegas('destroy');
+					
+					
+					$('.vegas-slider').vegas({
+					
+			   slides:[
+					{ src: "images/60.jpg" },
+					{ src: "images/61.jpg" },
+					{ src: "images/62.jpg" },
+					{ src: "images/63.jpg" },
+					{ src: "images/64.jpg" },
+					{ src: "images/65.jpg" },
+					{ src: "images/66.jpg" },
+					{ src: "images/67.jpg" },
+					{ src: "images/601.jpg" },
+					{ src: "images/602.jpg" },
+					{ src: "images/603.png" },
+					{ src: "images/604.jpg" }
+					
+					 
+					
+				],
+				animation: 'kenburns'
+					
+					
+					
+					
+					
+				});
+				 }
+				else
+				{
+					$('body').vegas('destroy');
+					$('.vegas-slider').vegas({
+					
+			   slides:[
+					{ src: "images/01.jpg" },
+					{ src: "images/02.jpg" },
+					{ src: "images/04.jpg" },
+					{ src: "images/05.jpg" },
+					{ src: "images/06.jpg" }
+				],
+				animation: 'kenburns'
+					
+					
+					
+					
+					
+				});
+				}
+				
+				}
+				
+				 
+				 
 
 	
-	
+	//
 	
 					
 				function fancyTimeFormat(time)
@@ -270,19 +271,25 @@ else if(next == songs[2]){
 					ret += "" + secs;
 					return ret;
 				}
- function changeCurrentSongDetails(songObj) {
-    $('.current-song-image').attr('src','images/' + songObj.image)
-    $('.current-song-name').text(songObj.name)
-    $('.current-song-album').text(songObj.album)
-}
+				
+				
+	//function for current and duration time of song//			
+				
+				 function changeCurrentSongDetails(songObj) {
+					$('.current-song-image').attr('src','images/' + songObj.image)
+					$('.current-song-name').text(songObj.name)
+					$('.current-song-album').text(songObj.album)
+				}
+
+    //volume function//
 
 
-function setvolume(){
-	var song = document.querySelector('audio');
-	song.volume = slider.value/100;
-	
-}
-
+				function setvolume(){
+					var song = document.querySelector('audio');
+					song.volume = slider.value/100;
+					
+                }
+    //unction for play and pause//
 	
 			function toggleSong() {
 			var song = document.querySelector('audio');
@@ -302,7 +309,7 @@ function setvolume(){
 			
 			
 		
-			
+	//function for change time in minutes//		
 			
 			function updateCurrentTime() {
 			var song = document.querySelector('audio');
@@ -314,7 +321,7 @@ function setvolume(){
 			$('.song-duration').text(duration);
 		}
 		
-		
+	 //function for fill progress bar//	
 		function updateTimer() {
 			var song = document.querySelector('audio');
 			var ct = song.currentTime;
@@ -325,11 +332,11 @@ function setvolume(){
 		}
 		
 		
-		
+	//function for song play when click//	
 			
-						function addSongNameClickEvent(songObj,position) {
-							var songName = songObj.fileName;
-					var id = '#song' + position;
+			function addSongNameClickEvent(songObj,position) {
+				var songName = songObj.fileName;
+				var id = '#song' + position;
 				$(id).click(function() {
 				var audio = document.querySelector('audio');
 				var currentSong = audio.src;
@@ -349,10 +356,10 @@ function setvolume(){
 				}
 								
 				
-			
-				  var songs = [{
-					  
+	            //playlist//	
+
 				
+			var songs = [{
 			
 				'name': 'Daspacito',
 				'artist': 'Luis Fonsi',
@@ -404,14 +411,18 @@ function setvolume(){
 				'image': 'song4.jpg'
 				
 			}]
-		 
-		   function timeJump(){
+			
+	// function for ending the song//
+
+	
+		function timeJump(){
 		var song =document.querySelector('audio')
 		song.currentTime = song.duration-5;
-	}
+	    }
 	 
+	//function for shuffle//	  
 		  
-		  $('audio').on('ended',function() {
+		 $('audio').on('ended',function() {
 			   
 				var audio = document.querySelector('audio');
 					if (willShuffle == 1) {
@@ -426,7 +437,7 @@ function setvolume(){
 						currentSongNumber = nextSongNumber;
 						
 					}
-					else if(currentSongNumber < 6) {
+					else if(currentSongNumber < 7) {
 						
 						var nextSongObj = songs[currentSongNumber];
 						audio.src = nextSongObj.fileName;
@@ -452,6 +463,8 @@ function setvolume(){
 					}
 				})
 				
+				
+				
 				function randomExcluded(min,max,excluded){
 				var n =Math.floor(Math.random()*(max-min)+min);
                 if	(n>=excluded)n++;
@@ -463,7 +476,7 @@ function setvolume(){
 
 				
 				
-				
+	//welcome screen//			
 							
   	        window.onload = function() {
 			
@@ -522,6 +535,8 @@ function setvolume(){
 					   
 
 			//jquery ko bola class ko select kro or jb uspr click ho to code run kre
+			
+			
 			$('.welcome-screen button').on('click', function() { //$ is used  in place of var button = document.querySelecttor and 
 				var name = $('#name-input').val();               // name-input ki jo id hai uski jo value hai usko print krao
 				if (name.length > 3) {                          //name ki jo length hai agr greater than 2 hai to code run krega
@@ -530,27 +545,32 @@ function setvolume(){
 					$('.welcome-screen').addClass('hidden');    //jquery ko bola wecome-screen class mai hidden class ko add kr do
 					$('.main').removeClass('hidden');  
 					
-					$('.vegas-slider').vegas({
+					
+					
+			   $('.vegas-slider').vegas({
 		
-   slides:[
-        { src: "images/01.jpg" },
-        { src: "images/02.jpg" },
-        { src: "images/04.jpg" },
-        { src: "images/05.jpg" },
-        { src: "images/06.jpg" }
-    ],
-	animation: 'kenburns'
-		
-		
-		
-		
-		
-	});
+			   slides:[
+					{ src: "images/01.jpg" },
+					{ src: "images/02.jpg" },
+					{ src: "images/04.jpg" },
+					{ src: "images/05.jpg" },
+					{ src: "images/06.jpg" }
+				],
+				animation: 'kenburns'
+					
+					
+					
+					
+					
+				});
 					//then remove hidden class in main class
 				} else {
+					var error='type name more than three letters';
 					$('#name-input').addClass('error');
+					$('.error-message').removeClass('hidden').text(error);
 				}
 			});
+			
 			
 	
 				$('.play-icon').on('click', function() {
@@ -590,53 +610,52 @@ function setvolume(){
 			});
 			
 		
-	$('#slider').on('mousemove',function(){
-		setvolume();
-	});
+			$('#slider').on('mousemove',function(){
+				setvolume();
+			});
 
 
-$('#song1').on('click',function(){
-	
-slide(songs[0]);
+			
+			
+			$('#song1').on('click',function(){
+				
+			slide(songs[0]);
 
-});
-
-
-
-
-
-$('#song2').on('click',function(){
-	
- slide(songs[1]);
-		 
-		
-});
-
-$('#song3').on('click',function(){
- 
- slide(songs[2]);
-});
+			});
 
 
+			$('#song2').on('click',function(){
+				
+			 slide(songs[1]);
+					 
+					
+			});
 
-$('#song4').on('click',function(){
-	slide(songs[3]);
-  
-});
+			$('#song3').on('click',function(){
+			 
+			 slide(songs[2]);
+			});
 
 
 
-$('#song5').on('click',function(){
-	slide(songs[4]);
-  
-});
+			$('#song4').on('click',function(){
+				slide(songs[3]);
+			  
+			});
 
 
 
-$('#song6').on('click',function(){
-slide(songs[5]);
- 
-});
+			$('#song5').on('click',function(){
+				slide(songs[4]);
+			  
+			});
+
+
+
+			$('#song6').on('click',function(){
+			slide(songs[5]);
+			 
+			});
 
 
 

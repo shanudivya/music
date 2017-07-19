@@ -1,4 +1,4 @@
-	
+	var Playingnumber = 0  ;
 				 var currentSongNumber = 1;
 			var willLoop = 0;
 			var willShuffle = 0; 
@@ -21,7 +21,17 @@
 			}
 			
 		
-		
+		function changeSong() 
+						{
+						var music =  songs[Playingnumber].fileName;
+						var song = document.querySelector("audio");
+						song.src = music;
+						toggleSong();
+						changeCurrentSongDetails(songs[Playingnumber]);
+						slide(songs[Playingnumber])
+						}
+
+
 	
 	
 		//function for different sliders for different songs//
@@ -338,6 +348,7 @@
 				var songName = songObj.fileName;
 				var id = '#song' + position;
 				$(id).click(function() {
+					Playingnumber=position-1;
 				var audio = document.querySelector('audio');
 				var currentSong = audio.src;
 				if(currentSong.search(songName) != -1)
@@ -465,13 +476,21 @@
 				
 				
 				
+				
+				
+				
+				
+				
+				
 				function randomExcluded(min,max,excluded){
 				var n =Math.floor(Math.random()*(max-min)+min);
                 if	(n>=excluded)n++;
                 return n;				
 					
 				}
-				
+				  
+				  
+		
 				
 
 				
@@ -554,7 +573,11 @@
 					{ src: "images/02.jpg" },
 					{ src: "images/04.jpg" },
 					{ src: "images/05.jpg" },
-					{ src: "images/06.jpg" }
+					{ src: "images/06.jpg" },
+					{ src: "images/07.jpg" },
+					{ src: "images/08.jpg" },
+					{ src: "images/09.png" }
+					
 				],
 				animation: 'kenburns'
 					
@@ -661,7 +684,69 @@
 
 
 
+$(".fa-step-forward").click(function(){
 
+						if(willShuffle ==1)
+						{
+						var audio = document.querySelector('audio');
+						var nextSongNumber = randomExcluded(0,5,Playingnumber); // Calling our function from Stackoverflow
+
+						var nextSongObj = songs[nextSongNumber];
+						audio.src = nextSongObj.fileName;
+						toggleSong();
+						changeCurrentSongDetails(nextSongObj);
+						slide(nextSongObj);
+						Playingnumber = nextSongNumber;
+
+
+						}
+
+
+						else {
+
+						if(Playingnumber == songs.length-1){
+						Playingnumber = 0;
+						changeSong();
+						}
+
+						else {
+						console.log("two");
+						console.log(Playingnumber);
+						Playingnumber++;
+						changeSong();
+						 
+						}
+
+						}
+
+						})
+
+
+
+
+						$(".fa-step-backward").click(function(){
+
+						if(Playingnumber == 0){
+						console.log("one");
+						Playingnumber = (songs.length-1);
+						changeSong();
+
+
+
+
+						}
+
+						else {
+						console.log("two");
+						console.log(Playingnumber);
+						Playingnumber--;
+						changeSong();
+						}
+
+
+
+
+						})
 
 
 

@@ -1,10 +1,10 @@
-	var Playingnumber = 0  ;
+	         
+			     var Playingnumber = 0  ;
 				 var currentSongNumber = 1;
-			var willLoop = 0;
-			var willShuffle = 0; 
-	var willmute = 1; 
-			
-			
+			     var willLoop = 0;
+			     var willShuffle = 0; 
+	             var willmute = 1; 
+	             var barsize=700;	
 			
 	//mute function//
 	
@@ -21,7 +21,7 @@
 			}
 			
 		
-		function changeSong() 
+		    function changeSong() 
 						{
 						var music =  songs[Playingnumber].fileName;
 						var song = document.querySelector("audio");
@@ -35,232 +35,12 @@
 	
 	
 		//function for different sliders for different songs//
-	function slide(next){
+	        function slide(next){
 		
-		if(next==songs[0]){
-	$('body').vegas('destroy');
-
-	$('.vegas-slider').vegas({
-		
-   slides:[
-        { src: "images/10.jpg" },
-        { src: "images/11.jpg" },
-        { src: "images/12.jpg" },
-        { src: "images/13.png" },
-		{ src: "images/14.jpg" },
-        { src: "images/15.jpg" },
-		{ src: "images/16.jpg" },
-		{ src: "images/17.jpg" },
-		{ src: "images/18.jpg" },
-		{ src: "images/19.png" },
-		{ src: "images/101.jpg" },
-		{ src: "images/102.jpg" },
-		{ src: "images/103.jpg" }
-    ],
-	animation: 'kenburns'
-		
-		
-	});
-	
-	}
-	else if(next ==songs[1]){
-	 $('body').vegas('destroy');
-		 
-	
-		
-		$('.vegas-slider').vegas({
-		
-   slides:[
-        { src: "images/21.png" },
-        { src: "images/22.jpg" },
-        { src: "images/23.png" },
-        { src: "images/24.jpg" },
-        { src: "images/25.jpg" },
-		{ src: "images/26.jpg" },
-        { src: "images/27.jpg" },
-		{ src: "images/28.jpg" },
-        { src: "images/29.jpg" },
-		{ src: "images/291.jpg" },
-        { src: "images/292.jpg" },
-		{ src: "images/293.jpg" }
-       
-    ],
-	animation: 'kenburns'
-		
-		
-		
-		
-		
-	});
-	}
-	
-
-
-			else if(next == songs[2]){
-				
-				 $('body').vegas('destroy');
-					
-					
-					$('.vegas-slider').vegas({
-					
-			   slides:[
-					{ src: "images/30.jpg" },
-					{ src: "images/31.jpg" },
-					{ src: "images/32.jpg" },
-					{ src: "images/33.png" },
-					{ src: "images/34.jpg" },
-					{ src: "images/35.png" },
-					{ src: "images/36.jpg" },
-					  { src: "images/37.jpg" },
-					{ src: "images/38.jpg" },
-					{ src: "images/39.jpg" }
-					  
-					
-				],
-				animation: 'kenburns'
-		
-		
-		
-		
-		
-				});
-				
-				}	
-				else if(next == songs[3]){
-					$('body').vegas('destroy');
-					
-					
-					$('.vegas-slider').vegas({
-					
-			   slides:[
-					{ src: "images/41.jpg" },
-					{ src: "images/42.jpg" },
-					{ src: "images/43.jpg" },
-					{ src: "images/45.jpg" },
-					{ src: "images/46.jpg" },
-					{ src: "images/47.jpg" },
-					{ src: "images/48.jpg" },
-					{ src: "images/401.jpg" },
-					{ src: "images/402.jpg" },
-					{ src: "images/403.jpg" },
-					{ src: "images/404.jpg" },
-					{ src: "images/405.jpg" },
-					{ src: "images/406.png" },
-					{ src: "images/407.jpg" }
-					  
-					  
-				],
-				animation: 'kenburns'
-					
-					
-					
-					
-					
-				});
-				
-				}
-				else if(next == songs[4]){
-				$('body').vegas('destroy');
-					
-					
-					$('.vegas-slider').vegas({
-					
-			   slides:[
-					{ src: "images/51.jpg" },
-					{ src: "images/52.jpg" },
-					{ src: "images/53.jpg" },
-					{ src: "images/54.jpg" },
-					{ src: "images/55.jpg" },
-					{ src: "images/56.jpg" },
-					{ src: "images/57.jpg" },
-					{ src: "images/58.jpg" },
-					{ src: "images/59.jpg" },
-					{ src: "images/591.jpg" },
-					{ src: "images/592.jpg" },
-					{ src: "images/593.jpg" },
-					{ src: "images/595.jpg" },
-					{ src: "images/596.jpg" },
-					{ src: "images/597.jpg" },
-					{ src: "images/598.jpg" },
-					{ src: "images/599.jpg" },
-					{ src: "images/501.jpg" },
-					{ src: "images/502.jpg" },
-					{ src: "images/503.jpg" },
-					{ src: "images/504.jpg" },
-					{ src: "images/505.jpg" },
-					{ src: "images/506.jpg" },
-					{ src: "images/507.jpg" }
-					 
-					
-				],
-				animation: 'kenburns'
-					
-					
-					
-					
-					
-				});
-				}
-				 else if(next == songs[5])
-				 {
-				 $('body').vegas('destroy');
-					
-					
-					$('.vegas-slider').vegas({
-					
-			   slides:[
-					{ src: "images/60.jpg" },
-					{ src: "images/61.jpg" },
-					{ src: "images/62.jpg" },
-					{ src: "images/63.jpg" },
-					{ src: "images/64.jpg" },
-					{ src: "images/65.jpg" },
-					{ src: "images/66.jpg" },
-					{ src: "images/67.jpg" },
-					{ src: "images/601.jpg" },
-					{ src: "images/602.jpg" },
-					{ src: "images/603.png" },
-					{ src: "images/604.jpg" }
-					
-					 
-					
-				],
-				animation: 'kenburns'
-					
-					
-					
-					
-					
-				});
-				 }
-				else
-				{
-					$('body').vegas('destroy');
-					$('.vegas-slider').vegas({
-					
-			   slides:[
-					{ src: "images/01.jpg" },
-					{ src: "images/02.jpg" },
-					{ src: "images/04.jpg" },
-					{ src: "images/05.jpg" },
-					{ src: "images/06.jpg" }
-				],
-				animation: 'kenburns'
-					
-					
-					
-					
-					
-				});
-				}
-				
-				}
-				
-				 
-				 
+	 
 
 	
-	//
+	
 	
 					
 				function fancyTimeFormat(time)
@@ -299,7 +79,7 @@
 					song.volume = slider.value/100;
 					
                 }
-    //unction for play and pause//
+    //function for play and pause//
 	
 			function toggleSong() {
 			var song = document.querySelector('audio');
@@ -750,7 +530,25 @@ $(".fa-step-forward").click(function(){
 
 
 
+                        $('.player-progress').on('click',function(e){
+						     //console.log(e.pageX);
 
+                        var song =document.querySelector('audio');
+                            if(!song.ended){
+								 var mouseX =e.pageX -bar.offsetLeft;
+								 // console.log(mouseX);
+								 var newtime =(mouseX*song.duration)/barsize;
+								 //console.log(newtime);
+								 song.currentTime =newtime;
+								 
+								 
+								 var ct= song.currentTime;
+								 var dt= song.duration;
+								 var percentage=(ct/dt)*100;
+								 $(".progress-filled").css('width',percentage+"%");
+							}						
+							
+						});
 
 
 
